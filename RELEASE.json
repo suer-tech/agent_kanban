@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "sequence": 3,
+  "protocol": "codex-peer-2026-10-v1",
+  "releaseDigest": "9bd0a1096b03a155f326db73c7b9ba7341e789ce3dfba6b18440ec2ea22299b8",
+  "source": "https://github.com/suer-tech/agent_kanban",
+  "platformStatus": {
+    "win32-x64": "tested",
+    "win32-arm64": "not-live-verified",
+    "darwin-arm64": "preview-no-verified-adapter",
+    "darwin-x64": "preview-no-verified-adapter"
+  },
+  "verification": {
+    "clientTestsPassed": 54,
+    "windowsBootstrapNode": "24.22.0",
+    "vsCodeCompanion": "0.2.0",
+    "macOSLiveDeliveryVerified": false
+  }
+}

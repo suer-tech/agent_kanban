@@ -1,0 +1,17 @@
+# User credentials, runtime and local logs must never be published.
+.runtime/
+.vercel/
+.env*
+node_modules/
+*.connection.json
+connection.json
+client.json
+credentials.json
+*.key
+*.pem
+!skills/ocr-kanban-setup/assets/release-key.pem
+*.log
+status.json
+compatibility.json
+update-status.json
+.DS_Store
