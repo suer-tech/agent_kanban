@@ -19,7 +19,7 @@ test('published client signature matches release metadata and bootstrap has no m
   assert.equal(JSON.parse(stdout).bundleVerified, true);
 });
 test('checksum inventory matches distribution and the ZIP contains the same installer instructions and signed assets', async () => {
-  for (const line of (await readFile('SHA256SUMS', 'utf8')).trim().split('\n')) {
+  for (const line of (await readFile('SHA256SUMS', 'utf8')).trim().split(/\r?\n/)) {
     const [expected, path] = line.split('  '); assert.equal(createHash('sha256').update(await readFile(path)).digest('hex'), expected, path);
   }
   const zip = await readFile('dist/ocr-kanban-setup.zip'), entries = new Map(); let pos = 0;
